@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form th:action="@{converter}" method="post">
+	Temperatura em °C: <input type="text" name="tempC"/>
+	<input type="submit" value="para F = "/>
+	<input type="text" name="tempCconver"/>
+	<br/>
+	Temperatura em °F: <input type="text" name="tempF"/>
+	<input type="submit" value="para C = "/>
+	<input type="text" name="tempFconver"/>
+</form>
+
+</body>
+</html>
