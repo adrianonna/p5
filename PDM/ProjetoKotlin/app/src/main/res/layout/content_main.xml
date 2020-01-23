@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivMainCamera"
+            android:background="@drawable/noimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etMainTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titulo" />
+
+        <EditText
+            android:id="@+id/etMainInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informações" />
+
+        <TextView
+            android:id="@+id/etMainLocalizacao"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:hint="Localizacao"
+            android:inputType="none"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btMainCancelar"-->
+            <!--                android:text="cancelar"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"/>-->
+            <Button
+                android:id="@+id/btMainVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="voltar" />
+
+            <Button
+                android:id="@+id/btMainEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enviar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/display_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teste" />
+    </LinearLayout>
+
+
+</LinearLayout>
