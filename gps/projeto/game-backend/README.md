@@ -23,7 +23,3 @@
 ##### Classes
 
 > https://dungeon-seeker.firebaseio.com/classes.json
-
-
-## Game - frontend
-> https://github.com/samueldcabral/Game
